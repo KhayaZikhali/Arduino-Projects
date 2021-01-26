@@ -1,6 +1,7 @@
 int xPin = A0;
 int yPin = A1;
 int sPin = 2;
+// delay time
 int dT = 10;
 int xVal;
 int yVal;
@@ -21,6 +22,7 @@ void loop() {
   yVal = analogRead(yPin);
   sVal = digitalRead(sPin);
   delay(dT);
+  //Prints the values to serial monitor  
   Serial.print(" X value =  ");
   Serial.print(xVal);
   Serial.print(", Y value = " ); 
